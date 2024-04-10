@@ -1,0 +1,25 @@
+2024-04-10 00:53:44,981 INFO:   Effective batch size is 2048.
+2024-04-10 00:53:45,006 INFO:   Checkpoint autoloading is enabled. Looking for latest checkpoint in "model_dir_bert_large_pytorch" directory with the following naming convention: `checkpoint_(step)(_timestamp)?.mdl`.
+2024-04-10 00:53:45,008 INFO:   Found latest checkpoint at "model_dir_bert_large_pytorch/checkpoint_1000.mdl".
+2024-04-10 00:53:45,008 INFO:   Loading weights from checkpoint model_dir_bert_large_pytorch/checkpoint_1000.mdl
+2024-04-10 00:58:50,799 INFO:   Global step 1000 found in the checkpoint and loaded.
+2024-04-10 00:58:50,878 INFO:   Optimizer state found in the checkpoint and loaded
+2024-04-10 00:58:50,878 INFO:   DataLoader state not found in the checkpoint and not loaded. DataLoaders will yield samples from the beginning.
+2024-04-10 00:58:50,878 INFO:   LR scheduler state found in the checkpoint and loaded
+2024-04-10 00:58:50,883 INFO:   Grad Scaler state found in the checkpoint and loaded
+Traceback (most recent call last):
+  File "run.py", line 45, in <module>
+    main()
+  File "run.py", line 36, in main
+    main(
+  File "../../../../modelzoo/common/pytorch/run_utils.py", line 267, in main
+    return run_with_params(
+  File "../../../../modelzoo/common/pytorch/run_utils.py", line 319, in run_with_params
+    return run_cstorch_flow(params, model_fn, train_data_fn, eval_data_fn)
+  File "../../../../modelzoo/common/pytorch/run_cstorch_flow.py", line 123, in run_cstorch_flow
+    run_cstorch_train(
+  File "../../../../modelzoo/common/pytorch/run_cstorch_flow.py", line 750, in run_cstorch_train
+    num_steps = cstorch.utils.data.compute_num_steps(
+  File "/home/lindsey/R_2.0.3/venv_cerebras_pt/lib/python3.8/site-packages/cerebras_pytorch/utils/data/utils.py", line 121, in compute_num_steps
+    raise RuntimeError(
+RuntimeError: Initial global step 1000 already exceeds max step 1000.

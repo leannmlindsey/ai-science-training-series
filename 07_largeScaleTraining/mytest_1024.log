@@ -1,0 +1,54 @@
+2024-04-09 21:43:44,171 INFO:   Effective batch size is 1024.
+2024-04-09 21:43:44,198 INFO:   Checkpoint autoloading is enabled. Looking for latest checkpoint in "model_dir_bert_large_pytorch" directory with the following naming convention: `checkpoint_(step)(_timestamp)?.mdl`.
+2024-04-09 21:43:44,199 INFO:   No checkpoints were found in "model_dir_bert_large_pytorch".
+2024-04-09 21:43:44,199 INFO:   No checkpoint was provided. Using randomly initialized model parameters.
+2024-04-09 21:43:45,496 INFO:   Saving checkpoint at step 0
+2024-04-09 21:44:14,198 INFO:   Saved checkpoint model_dir_bert_large_pytorch/checkpoint_0.mdl
+2024-04-09 21:44:29,239 INFO:   Compiling the model. This may take a few minutes.
+2024-04-09 21:44:29,240 INFO:   Defaulted to use the job-operator namespace as the usernode config /opt/cerebras/config_v2 only has access to that namespace.
+2024-04-09 21:44:30,699 INFO:   Initiating a new image build job against the cluster server.
+2024-04-09 21:44:30,811 INFO:   Custom worker image build is disabled from server.
+2024-04-09 21:44:30,817 INFO:   Defaulted to use the job-operator namespace as the usernode config /opt/cerebras/config_v2 only has access to that namespace.
+2024-04-09 21:44:31,165 INFO:   Initiating a new compile wsjob against the cluster server.
+2024-04-09 21:44:31,289 INFO:   compile job id: wsjob-nv87jjrjhnziq3hrhvw4wu, remote log path: /n1/wsjob/workdir/job-operator/wsjob-nv87jjrjhnziq3hrhvw4wu
+2024-04-09 21:44:41,332 INFO:   Poll ingress status: Waiting for job running, current job status: Queueing, msg: job is queueing. Job queue status: current job is top of queue but likely blocked by running jobs, 1 compile job(s) running using 67Gi memory. For more information, please run 'csctl get jobs'.
+2024-04-09 21:59:12,403 INFO:   Poll ingress status: Waiting for job running, current job status: Scheduled, msg: job is scheduled. 
+2024-04-09 21:59:22,424 INFO:   Poll ingress status: Waiting for job service readiness.
+2024-04-09 21:59:52,487 INFO:   Ingress is ready: Job ingress ready, poll ingress success.
+2024-04-09 22:00:26,580 INFO:   Compile artifacts successfully written to remote compile directory. Compile hash is: cs_9465229803081323743
+2024-04-09 22:00:26,587 INFO:   Heartbeat thread stopped for wsjob-nv87jjrjhnziq3hrhvw4wu.
+2024-04-09 22:00:26,590 INFO:   Compile was successful!
+2024-04-09 22:00:26,593 INFO:   Programming Cerebras Wafer Scale Cluster for execution. This may take a few minutes.
+2024-04-09 22:00:29,008 INFO:   Defaulted to use the job-operator namespace as the usernode config /opt/cerebras/config_v2 only has access to that namespace.
+2024-04-09 22:00:29,373 INFO:   Initiating a new execute wsjob against the cluster server.
+2024-04-09 22:00:29,509 INFO:   execute job id: wsjob-9kfnanjwxmbggqykcdqchb, remote log path: /n1/wsjob/workdir/job-operator/wsjob-9kfnanjwxmbggqykcdqchb
+2024-04-09 22:00:39,553 INFO:   Poll ingress status: Waiting for job running, current job status: Queueing, msg: job is queueing. Job queue status: current job is top of queue but likely blocked by running jobs, 1 execute job(s) running using 1 system(s), 1 compile job(s) running using 67Gi memory. For more information, please run 'csctl get jobs'.
+2024-04-09 22:00:49,538 INFO:   Poll ingress status: Waiting for job running, current job status: Scheduled, msg: job is scheduled. 
+2024-04-09 22:01:09,630 INFO:   Poll ingress status: Waiting for job service readiness.
+2024-04-09 22:01:49,804 INFO:   Ingress is ready: Job ingress ready, poll ingress success.
+2024-04-09 22:02:20,002 INFO:   Preparing to execute using 1 CSX
+2024-04-09 22:02:49,488 INFO:   About to send initial weights
+2024-04-09 22:03:38,906 INFO:   Finished sending initial weights
+2024-04-09 22:03:38,909 INFO:   Finalizing appliance staging for the run
+2024-04-09 22:03:38,948 INFO:   Waiting for device programming to complete
+2024-04-09 22:05:21,234 INFO:   Device programming is complete
+2024-04-09 22:05:22,049 INFO:   Using network type: ROCE
+2024-04-09 22:05:22,050 INFO:   Waiting for input workers to prime the data pipeline and begin streaming ...
+2024-04-09 22:05:22,091 INFO:   Input workers have begun streaming input data
+2024-04-09 22:05:39,043 INFO:   Appliance staging is complete
+2024-04-09 22:05:39,048 INFO:   Beginning appliance run
+2024-04-09 22:05:59,944 INFO:   | Train Device=CSX, Step=100, Loss=9.48438, Rate=4915.28 samples/sec, GlobalRate=4915.28 samples/sec
+2024-04-09 22:06:21,197 INFO:   | Train Device=CSX, Step=200, Loss=8.35938, Rate=4857.03 samples/sec, GlobalRate=4866.25 samples/sec
+2024-04-09 22:06:42,439 INFO:   | Train Device=CSX, Step=300, Loss=7.91406, Rate=4835.16 samples/sec, GlobalRate=4850.93 samples/sec
+2024-04-09 22:07:03,534 INFO:   | Train Device=CSX, Step=400, Loss=7.54688, Rate=4846.65 samples/sec, GlobalRate=4851.78 samples/sec
+2024-04-09 22:07:24,711 INFO:   | Train Device=CSX, Step=500, Loss=7.46875, Rate=4839.95 samples/sec, GlobalRate=4848.51 samples/sec
+2024-04-09 22:07:45,765 INFO:   | Train Device=CSX, Step=600, Loss=7.39844, Rate=4854.13 samples/sec, GlobalRate=4851.02 samples/sec
+2024-04-09 22:08:07,040 INFO:   | Train Device=CSX, Step=700, Loss=7.35156, Rate=4829.58 samples/sec, GlobalRate=4845.58 samples/sec
+2024-04-09 22:08:28,135 INFO:   | Train Device=CSX, Step=800, Loss=7.25000, Rate=4844.42 samples/sec, GlobalRate=4846.67 samples/sec
+2024-04-09 22:08:49,166 INFO:   | Train Device=CSX, Step=900, Loss=7.22656, Rate=4859.16 samples/sec, GlobalRate=4849.14 samples/sec
+2024-04-09 22:09:10,054 INFO:   | Train Device=CSX, Step=1000, Loss=7.09375, Rate=4885.07 samples/sec, GlobalRate=4854.41 samples/sec
+2024-04-09 22:09:10,054 INFO:   Saving checkpoint at step 1000
+2024-04-09 22:09:46,450 INFO:   Saved checkpoint model_dir_bert_large_pytorch/checkpoint_1000.mdl
+2024-04-09 22:10:30,933 INFO:   Heartbeat thread stopped for wsjob-9kfnanjwxmbggqykcdqchb.
+2024-04-09 22:10:30,940 INFO:   Training completed successfully!
+2024-04-09 22:10:30,941 INFO:   Processed 1024000 sample(s) in 210.942364649 seconds.
