@@ -32,3 +32,5 @@ https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeSc
 
 ### Groq outputs
 https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/groq_output.txt
+
+I changed the input from dummy to custom.  The model ran with the same printed output with no errors.
