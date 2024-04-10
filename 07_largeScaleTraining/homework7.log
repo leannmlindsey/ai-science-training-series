@@ -1,0 +1,32 @@
+srun: job 20309 has been allocated resources
+Epochs:   0%|          | 0/10 [00:00<?,[01:13:50.196] [poptorch:cpp] [warning] [DISPATCHER] Type coerced from Long to Int for tensor id 10| 0/150 [00:00<?, ?it/s]
+Graph compilation: 100%|██████████| 100/100 [00:00<00:00]
+Epochs: 100%|██████████| 10/10 [01:29<00:00,  8.95s/it]
+Graph compilation: 100%|██████████| 100/100 [00:00<00:00]                          
+ 91%|█████████TrainingModelWithLoss(0, 44.61it/s]0<00:00]
+  (model): Network(
+    (layer1): Block(
+      (conv): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1))
+      (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (relu): ReLU()
+    )
+    (layer2): Block(
+      (conv): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1))
+      (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (relu): ReLU()
+    )
+    (layer3): Linear(in_features=1600, out_features=128, bias=True)
+    (layer3_act): ReLU()
+    (layer3_dropout): Dropout(p=0.5, inplace=False)
+    (layer4): Linear(in_features=128, out_features=10, bias=True)
+    (softmax): Softmax(dim=1)
+  )
+  (loss): CrossEntropyLoss()
+)
+Accuracy on test set: 98.56%
+
+# Hyper-parameter changes were
+# learning_rate = 0.01
+# epochs = 25
+# batch_size = 32
+# test_batch_size = 80 
