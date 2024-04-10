@@ -7,6 +7,8 @@ https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeSc
 
 https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/mytest_2048.log
 
+Observations: The batch size of 512 finished faster than the batch size of 1024, while the batch size of 2048 had an error and was unable to finish.
+
 ### Graphcore outputs
 https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/homework7.log
 
