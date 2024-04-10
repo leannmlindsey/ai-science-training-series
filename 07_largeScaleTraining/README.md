@@ -26,9 +26,11 @@ batch_size = 32
 test_batch_size = 80 
 
 ### Sambanova outputs
-https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/slurm-final-30959.out
+https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/BertLarge.ntasks16.out
 
-https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/slurm-final-4-30961.out
+https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/BertLarge.ntasks4.out
+
+Both models ended with an error, and although I tried many times, I always had the same error.  I would imagine that with less parallism, the overall execution time would increase.  Although most processing is happening on the GPU, the preprocessing is happening on the CPU.
 
 ### Groq outputs
 https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/groq_output.txt
