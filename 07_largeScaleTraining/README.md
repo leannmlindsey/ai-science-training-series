@@ -12,13 +12,17 @@ Observations: The batch size of 512 finished faster than the batch size of 1024,
 ### Graphcore outputs
 https://github.com/leannmlindsey/ai-science-training-series/blob/main/07_largeScaleTraining/homework7.log
 
-Best accuracy was with the following parameters:
+
 Accuracy on test set: 98.56%
 
-Hyper-parameter changes were
+I lowered the learning rate, increased the epochs and increased the batch size.
+
 learning_rate = 0.01
+
 epochs = 25
+
 batch_size = 32
+
 test_batch_size = 80 
 
 ### Sambanova outputs
